@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Lorem ipsum</title>
+</head>
+<body>
+
+    <nav id="overlay">
+        <img src="images/close.svg" class="close-btn" id="close-menu">
+
+       <ul>
+            <li><a href="#">lorem</a>
+                <span>lorem ipsum dolor sit amet, </br>consectetur</span>
+            </li>
+            <li><a href="#">ipsum</a>
+                <span>lorem ipsum dolor sit amet, </br>consectetur</span>
+            </li>
+            <li><a href="#">dolor</a>
+                <span>lorem ipsum dolor sit amet, </br>consectetur</span>
+            </li>
+            <li><a href="#">sit amet</a>
+                <span>lorem ipsum dolor sit amet, </br>consectetur</span>
+            </li>
+       </ul> 
+    </nav>
+
+    <header>
+        <a href="#" class="logo">Lorem ipsum</a>
+
+        <img src="images/menu.svg" class="menu-btn" id="open-menu">
+    </header>
+
+    <section>
+        <h1>lorem ipsum et</h1>
+    </section>
+    <script>
+
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function() {
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function() {
+            overlay.classList.remove('show-menu');
+        });
+
+
+
+    </script>
+</body>
+</html>
